@@ -123,3 +123,21 @@ body {
   }
 
 }
+
+#profile_left{
+  float: left;
+  width: 50%;
+}
+
+#profile_right{
+  float: left;
+  text-align: left;
+  width: 40%;
+  background: white;
+  margin: 0 1%;
+}
+
+#info{
+  text-align: left;
+  margin-left: 150px
+}

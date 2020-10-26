@@ -4,36 +4,29 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="webstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>User Profile</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="" href="index.html">Home</a>
-        <a href="">About</a>
-        <a href="profile.html">Profile</a>
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <div class="skilllist">
-            <form action="/action_page.php">
-                <label for="skill"></label>
-                <select name="skilllist" id="skills">
-                    <option value="" disabled selected>Select Your Skills</option>
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
-                </select>
-            </form>
-        </div>
+  <div class="navbar">
+    <img src="temp_logo.png" alt="logo" id = "logo">
+
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
     </div>
+    <a class="" href="index.html">Home</a>
+    <a href="">About</a>
+    <a href="profile.html">Profile</a>
+  </div>
     <div id="profile_left"><img id="profile_pic" src="./images/user.jpg">
         <p id=info>Insert Cool stuff here such as...<br>Skills<br>Preffered Schedule<br>Contact
-            Info<br>Ratings<br>Hobbies?<br>Who would win in a fight? A grilled Cheese or a Taco?.</p>
+            Info<br>Ratings<br>Hobbies?<br>Who would win in a fight? <br>A grilled Cheese or a Taco?.</p>
     </div>
     <div id="profile_right">
         <p id="bio">This is my bio. I think I am cool and so does my mom.<br>Lorem ipsum dolor sit amet, consectetur
