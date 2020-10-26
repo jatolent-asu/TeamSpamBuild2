@@ -9,7 +9,7 @@ body {
 
 .splash-page{
   font-size: 15px;
-  font-family: "Calisto MT", serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding-left: 25px;
   padding-right: 15px;
 }
@@ -32,7 +32,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Lato", serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
