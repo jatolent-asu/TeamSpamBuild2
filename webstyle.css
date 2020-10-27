@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: Lato, serif;
+  font-family: Arial, Helvetica, sans-serif;;
 }
 
 .main-page{
@@ -17,6 +17,50 @@ body {
   overflow: hidden;
   background-color: #2867B2;
   border-bottom: 2px solid #3d76b9;
+}
+
+#loginId{
+  float: right;
+}
+
+#signupId{
+  min-width: 150px;
+  max-width: 250px;
+  display: block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: #2867B2;
+  color: white;
+  vertical-align: middle;
+  position: relative;
+}
+
+#signupId span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#signupId span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#signupId:hover span {
+  padding-right: 25px;
+}
+
+#signupId:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 #logo{
@@ -32,7 +76,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Trispace, serif;
+  font-family: Arial, Helvetica, sans-serif;;
   font-size: 20px;
 }
 
