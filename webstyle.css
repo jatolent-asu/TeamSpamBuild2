@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-page{
@@ -17,50 +17,6 @@ body {
   overflow: hidden;
   background-color: #2867B2;
   border-bottom: 2px solid #3d76b9;
-}
-
-#loginId{
-  float: right;
-}
-
-#signupId{
-  min-width: 150px;
-  max-width: 250px;
-  display: block;
-  margin: 1em;
-  padding: 1em 2em;
-  border: none;
-  transition: all 0.5s;
-  cursor: pointer;
-  background-color: #2867B2;
-  color: white;
-  vertical-align: middle;
-  position: relative;
-}
-
-#signupId span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#signupId span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#signupId:hover span {
-  padding-right: 25px;
-}
-
-#signupId:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 #logo{
@@ -111,7 +67,7 @@ body {
   border: none;
 }
 
-#searchbar {
+.searchbar {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -145,13 +101,14 @@ body {
   text-align: center;
 }
 
-#profile_pic {
+.profile-pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   max-width: 200px;
   max-height: auto;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -193,3 +150,8 @@ body {
   text-align: left;
   margin-left: 150px
 }
+
+.profile-entry{
+  padding: 50px;
+}
+
