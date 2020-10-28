@@ -191,9 +191,11 @@ body {
   margin: 0 1%;
 }
 
-#info{
+#info, #bio{
   text-align: left;
-  margin-left: 150px
+  border:0px;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .profile-entry{

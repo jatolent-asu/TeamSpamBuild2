@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="webstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>User Profile</title>
+    <script src="profile.js"></script>
 </head>
 
 <body>
@@ -26,21 +27,11 @@
 
   <div class = "profile-entry">
     <div id="profile_left"><img class="profile-pic" src="./images/user.jpg">
-        <p id=info>Insert Cool stuff here such as...<br>Skills<br>Preffered Schedule<br>Contact
-            Info<br>Ratings<br>Hobbies?<br>Who would win in a fight? <br>A grilled Cheese or a Taco?.</p>
+        <textarea id="info" readonly type="text" cols='30' rows='10'>Insert Cool stuff here such as...&#13;&#10;Skills&#13;&#10;Preffered Schedule&#13;&#10;Contact Info&#13;&#10;Ratings&#13;&#10;Hobbies?&#13;&#10;Who would win in a fight? &#13;&#10;A grilled Cheese or a Taco?.</textarea>
     </div>
     <div id="profile_right">
-        <p id="bio">This is my bio. I think I am cool and so does my mom.<br>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec pulvinar mollis justo in molestie. Morbi id euismod lectus. In sollicitudin ante at
-            magna tempus cursus eget eget dui. Integer risus ante, sagittis quis sodales ac, volutpat a nisi. Donec
-            varius nisl nibh, sit amet congue libero congue fringilla. Nunc bibendum sagittis lobortis. Donec pharetra,
-            tortor a finibus viverra, quam purus hendrerit erat, ultrices consequat orci mi vitae dolor.<br>
-
-            Cras dictum mollis magna id posuere. Vivamus sed massa eu nulla ultrices dictum. Donec a vulputate mauris.
-            Aliquam massa arcu, molestie sit amet tincidunt eu, ornare sed nibh. Vivamus hendrerit vel felis et
-            vulputate. Cras faucibus lorem et ornare porttitor. Vestibulum venenatis est arcu, id tincidunt libero
-            elementum eu. Fusce a nulla finibus, sodales velit sed, consectetur arcu. Phasellus semper euismod dui in
-            fermentum. Maecenas imperdiet sed urna et elementum. Sed sed ornare orci.<br>
+        <button id="edit" onclick="edit_profile()">Edit Profile</button>
+        <textarea id="bio" readonly type="textbox" cols='60' rows='25'>This is my bio. I think I am cool and so does my mom.&#13;&#10; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mollis justo in molestie. Morbi id euismod lectus. In sollicitudin ante at magna tempus cursus eget eget dui. Integer risus ante, sagittis quis sodales ac, volutpat a nisi. Donec varius nisl nibh, sit amet congue libero congue fringilla. Nunc bibendum sagittis lobortis. Donec pharetra, tortor a finibus viverra, quam purus hendrerit erat, ultrices consequat orci mi vitae dolor.&#13;&#10; Cras dictum mollis magna id posuere. Vivamus sed massa eu nulla ultrices dictum. Donec a vulputate mauris. Aliquam massa arcu, molestie sit amet tincidunt eu, ornare sed nibh. Vivamus hendrerit vel felis et vulputate. Cras faucibus lorem et ornare porttitor. Vestibulum venenatis est arcu, id tincidunt libero elementum eu. Fusce a nulla finibus, sodales velit sed, consectetur arcu. Phasellus semper euismod dui in fermentum. Maecenas imperdiet sed urna et elementum. Sed sed ornare orci.&#13;&#10;</textarea>
     </div>
 
   </div>
