@@ -15,3 +15,11 @@ function edit_profile(){
     }
 
 }
+
+function linkedin(){
+    let link = 'https://google.com'
+    window.open(
+        link,
+        '_blank' // <- This is what makes it open in a new window.
+      );
+}
