@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="webstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>User Profile</title>
+    <script src="profile.js"></script>
 </head>
 
 <body>
@@ -15,7 +14,7 @@
 
     <div class="search-container">
       <form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
+        <input type="text" placeholder="Search.." name="search" class = "searchbar">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
 
@@ -23,50 +22,21 @@
     <a class="" href="index.html">Home</a>
     <a href="">About</a>
     <a href="profile.html">Profile</a>
+    <a href="#" id="longinId">Login</a>
   </div>
-    <div id="profile_left"><img id="profile_pic" src="./images/user.jpg">
-        <p id=info>Insert Cool stuff here such as...<br>Skills<br>Preffered Schedule<br>Contact
-            Info<br>Ratings<br>Hobbies?<br>Who would win in a fight? <br>A grilled Cheese or a Taco?.</p>
+
+  <div class = "profile-entry">
+    <div id="profile_left"><img class="profile-pic" src="./images/user.jpg">
+        <textarea id="info" readonly type="text" cols='30' rows='10'>Insert Cool stuff here such as...&#13;&#10;Skills&#13;&#10;Preffered Schedule&#13;&#10;Contact Info&#13;&#10;Ratings&#13;&#10;Hobbies?&#13;&#10;Who would win in a fight? &#13;&#10;A grilled Cheese or a Taco?.</textarea>
     </div>
     <div id="profile_right">
-        <p id="bio">This is my bio. I think I am cool and so does my mom.<br>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec pulvinar mollis justo in molestie. Morbi id euismod lectus. In sollicitudin ante at
-            magna tempus cursus eget eget dui. Integer risus ante, sagittis quis sodales ac, volutpat a nisi. Donec
-            varius nisl nibh, sit amet congue libero congue fringilla. Nunc bibendum sagittis lobortis. Donec pharetra,
-            tortor a finibus viverra, quam purus hendrerit erat, ultrices consequat orci mi vitae dolor.<br>
+        <button id="edit" onclick="edit_profile()">Edit Profile</button>
+        <button id="linkedin" onclick="linkedin()">LinkedIn</button>
 
-            Cras dictum mollis magna id posuere. Vivamus sed massa eu nulla ultrices dictum. Donec a vulputate mauris.
-            Aliquam massa arcu, molestie sit amet tincidunt eu, ornare sed nibh. Vivamus hendrerit vel felis et
-            vulputate. Cras faucibus lorem et ornare porttitor. Vestibulum venenatis est arcu, id tincidunt libero
-            elementum eu. Fusce a nulla finibus, sodales velit sed, consectetur arcu. Phasellus semper euismod dui in
-            fermentum. Maecenas imperdiet sed urna et elementum. Sed sed ornare orci.<br>
-
-            Phasellus mollis accumsan laoreet. Vivamus laoreet massa aliquet, tempor dui eu, tempus purus. Etiam sed
-            ipsum a sem dapibus convallis sit amet quis sapien. Aliquam vestibulum nisl eget enim sodales, tristique
-            tristique lectus blandit. Cras sed lacus eu nisi bibendum malesuada. Suspendisse vitae neque sit amet dui
-            porttitor porttitor. Sed bibendum scelerisque urna, eget tristique sapien elementum non. Nam ac mollis
-            libero, a feugiat ipsum. Sed id magna non justo finibus feugiat. Suspendisse ac mi sollicitudin, fringilla
-            est vitae, lacinia mi. Proin a eleifend nunc. Sed imperdiet, felis quis iaculis ultrices, nisi lectus
-            pretium sem, non efficitur nulla ex sed diam. Donec feugiat dolor vitae sem facilisis mattis consectetur a
-            dolor. Ut tellus nisi, varius sit amet blandit eu, cursus at orci. Suspendisse tempus vehicula sem ut
-            porttitor.<br>
-
-            Praesent eget varius ante. Suspendisse imperdiet neque ut mauris vulputate, quis blandit velit imperdiet.
-            Mauris at condimentum dolor. Nunc a turpis ligula. Vivamus suscipit porttitor aliquam. Fusce in odio ut est
-            molestie facilisis. Vestibulum pulvinar varius mauris, sed placerat purus. Nam quis ipsum sit amet augue
-            blandit pretium. Mauris tincidunt, dolor vitae viverra semper, neque enim tempus quam, in imperdiet metus
-            eros at metus. Donec molestie velit dictum est finibus sagittis. Quisque diam ante, efficitur et ultrices
-            non, varius eu libero. Aliquam varius eu sem sed pulvinar. Vivamus accumsan sodales ipsum in lacinia. Sed
-            placerat at ante eget fermentum.<br>
-
-            Praesent a nisi consectetur, tincidunt mauris vitae, convallis ex. Nunc fermentum mi et metus ornare porta.
-            Sed laoreet pulvinar diam, nec pulvinar ex. Vivamus elementum tristique quam, sed iaculis odio pretium a.
-            Integer nisl diam, molestie sit amet luctus volutpat, egestas ac urna. Nunc blandit condimentum nisl sed
-            tempor. Pellentesque ac interdum sapien. Fusce lacinia purus dui, in venenatis felis lacinia a. Nullam
-            tincidunt dapibus varius. Suspendisse id ex arcu. Fusce consequat lorem sit amet ex tristique ornare. Nullam
-            felis sem, volutpat non leo sit amet, convallis maximus velit. In in diam viverra, dictum orci ut, rutrum
-            est. Aenean id lorem in dolor sodales tincidunt.</p>
+        <textarea id="bio" readonly type="textbox" cols='60' rows='25'>This is my bio. I think I am cool and so does my mom.&#13;&#10; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar mollis justo in molestie. Morbi id euismod lectus. In sollicitudin ante at magna tempus cursus eget eget dui. Integer risus ante, sagittis quis sodales ac, volutpat a nisi. Donec varius nisl nibh, sit amet congue libero congue fringilla. Nunc bibendum sagittis lobortis. Donec pharetra, tortor a finibus viverra, quam purus hendrerit erat, ultrices consequat orci mi vitae dolor.&#13;&#10; Cras dictum mollis magna id posuere. Vivamus sed massa eu nulla ultrices dictum. Donec a vulputate mauris. Aliquam massa arcu, molestie sit amet tincidunt eu, ornare sed nibh. Vivamus hendrerit vel felis et vulputate. Cras faucibus lorem et ornare porttitor. Vestibulum venenatis est arcu, id tincidunt libero elementum eu. Fusce a nulla finibus, sodales velit sed, consectetur arcu. Phasellus semper euismod dui in fermentum. Maecenas imperdiet sed urna et elementum. Sed sed ornare orci.&#13;&#10;</textarea>
     </div>
+
+  </div>
 </body>
 
 </html>
