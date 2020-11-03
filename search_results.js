@@ -43,7 +43,7 @@ function initialize() {
             `)
                         
         // Create the li
-        result_list.innerHTML = output;
+        result_list.innerHTML = output.join(" ");
 
     }
 
