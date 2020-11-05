@@ -1,5 +1,6 @@
 var mentors = {
     "jatolent" :{
+      "Password": "hi",
       "Name": {
         "First": "Johnny",
         "Last": "Tolentino"
@@ -24,6 +25,7 @@ var mentors = {
       }
     },
     "thdespain" :{
+      "Password": "hi",
       "Name": {
         "First": "Todd",
         "Last": "Despain"
@@ -48,6 +50,7 @@ var mentors = {
       }
     },
     "randomChick94" :{
+      "Password": "hi",
       "Name": {
         "First": "Random",
         "Last": "Generated"
@@ -72,6 +75,7 @@ var mentors = {
       }
     },
     "schan" :{
+      "Password": "hi",
       "Name": {
         "First": "Fergus",
         "Last": "Chan"
@@ -96,6 +100,7 @@ var mentors = {
       }
     },
     "anika" :{
+      "Password": "hi",
       "Name": {
         "First": "Anika",
         "Last": "Faruk"
@@ -120,6 +125,7 @@ var mentors = {
       }
     },
     "KevinY" :{
+      "Password": "hi",
       "Name": {
         "First": "Kevin",
         "Last": "Yang"
@@ -144,6 +150,7 @@ var mentors = {
       }
     },
     "mtazbir" :{
+      "Password": "hi",
       "Name": {
         "First": "Taz",
         "Last": "Bir"
