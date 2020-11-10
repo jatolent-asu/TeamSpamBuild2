@@ -36,6 +36,7 @@ function user_load(){
         // var mentor_matches = JSON.parse(localStorage.getItem("mentor_matches"));
 
         // For each matching mentor...
+        debugger;
         var tempUser = sessionStorage.getItem('user');
 
        
