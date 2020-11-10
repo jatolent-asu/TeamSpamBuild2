@@ -1,6 +1,6 @@
-var tempUser = 'thdespai';
+// var tempUser = '';
 function edit_profile(){
-    debugger;
+    // debugger;
     let cool_stuff = document.getElementById("skills");
     let bio = document.getElementById("bio");
     let availability = document.getElementById("availability");
@@ -36,6 +36,8 @@ function user_load(){
         // var mentor_matches = JSON.parse(localStorage.getItem("mentor_matches"));
 
         // For each matching mentor...
+        var tempUser = sessionStorage.getItem('user');
+
        
             var info = mentors[tempUser];
             // Assign JSON artifacts to vars
