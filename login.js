@@ -7,10 +7,9 @@ function login(){
     let check_user = mentors[user];
 
     if (pass == check_user["Password"]){
-        debugger;
         window.alert("Login Successful")
         sessionStorage.setItem("user", user);
-        window.open("profile.html");
+        document.location.href = "profile.html";
 
     }
     else{
