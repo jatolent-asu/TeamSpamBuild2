@@ -249,7 +249,3 @@ textarea{
   margin:0;
 
   }
-  .fa-search:before {
-    content: "\f002";
-    max-width: 1vw;
-}

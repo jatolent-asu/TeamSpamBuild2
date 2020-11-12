@@ -5,8 +5,8 @@
   body {font-family: Arial, Helvetica, sans-serif;}
   * {box-sizing: border-box}
 
-  /* Full-width input fields
-  input[type=text], input[type=password] {
+  /* Full-width input fields */
+  #email, #pass, #pass-rep {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -18,7 +18,7 @@
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  } */
+  }
 
   hr {
     border: 1px solid #f1f1f1;
@@ -26,7 +26,7 @@
   }
 
   /* Set a style for all buttons */
-  /* button {
+  .loginbtn, .signupbtn {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -35,7 +35,7 @@
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-  } */
+  }
 
   button:hover {
     opacity:1;
@@ -98,13 +98,13 @@
     <hr>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <input id = "email" type="text" placeholder="Enter Email" name="email" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input id="pass-rep" type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
     <label>
       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
