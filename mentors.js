@@ -32,7 +32,8 @@ var mentors = {
       },
       "Skills": [
         "Ruby",
-        "Linux"
+        "Linux",
+        "Java"
       ],
       "Contact": {
         "Email": "thdespain@asu.edu",
